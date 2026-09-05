@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* Soundrich Hearing brand palette — extracted from public/assets/logos/brand-logo.png */
+  --color-brand: #008fc4; /* primary sky blue */
+  --color-brand-dark: #0071a1; /* deeper blue for hover/emphasis */
+  --color-brand-soft: #e8f6fc; /* light blue tint for backgrounds */
+  --color-accent: #64b348; /* secondary green */
+  --color-accent-dark: #3c8a2a; /* deeper green for hover/emphasis */
+
+  /* Semantic tokens used across components */
+  --color-heading: #0f172a;
+  --color-body: #475569;
+  --color-neutral-primary: #f8fafc;
+  --color-neutral-secondary-soft: #f1f5f9;
+
+  /* Infobar marquee animation (seamless right-to-left scroll) */
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Gentle float for hero/about floating badge cards */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 8s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  /* Colored bubbles that radiate outward from the center of the brand banner */
+  --animate-bubble: bubble 7s ease-in-out infinite;
+  --animate-bubble-slow: bubble 10s ease-in-out infinite;
+
+  @keyframes bubble {
+    0% {
+      transform: translate(-50%, -50%) translate(0, 0) scale(0.4);
+      opacity: 0;
+    }
+    15% {
+      opacity: 0.9;
+    }
+    70% {
+      opacity: 0.55;
+    }
+    100% {
+      transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) scale(1.05);
+      opacity: 0;
+    }
+  }
+}
+
+/* Hero slider autoplay progress bar */
+@keyframes slider-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
