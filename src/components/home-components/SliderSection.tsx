@@ -7,36 +7,36 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const SLIDES = [
   {
     image: "/assets/images/signia-n-bnr.jpg",
-    eyebrow: "Welcome to Soundrich Hearing",
-    title: "Hear Better, Live Better",
+    eyebrow: "Signia",
+    title: "Better Hearing Starts With the Right Care.",
     description:
       "Premium digital hearing aids fitted by expert audiologists. Start with a free hearing assessment at your nearest Soundrich clinic.",
   },
   {
     image: "/assets/images/tresound-bnr.jpg",
-    eyebrow: "Free Hearing Assessment",
-    title: "Reconnect With the Sounds You Love",
+    eyebrow: "Resound",
+    title: "Better Hearing Starts With the Right Care.",
     description:
       "A comprehensive hearing test with our expert audiologists and a personalised care plan — absolutely free, no obligations.",
   },
   {
     image: "/assets/images/widex-.jpg",
-    eyebrow: "Home Visit Services",
-    title: "Expert Hearing Care at Your Doorstep",
+    eyebrow: "Widex",
+    title: "Better Hearing Starts With the Right Care.",
     description:
       "Can't visit us? Our audiologists come to you — home visit hearing tests and hearing aid fitting across Delhi NCR.",
   },
   {
     image: "/assets/images/banner5.webp",
-    eyebrow: "Premium Hearing Aids",
-    title: "World-Class Hearing Aid Brands",
+    eyebrow: "Oticon",
+    title: "Better Hearing Starts With the Right Care.",
     description:
       "We stock leading international brands — Phonak, Oticon, Signia, Resound and more — with trial, fitting and complete aftercare.",
   },
   {
     image: "/assets/images/phonak-n-bnr.jpg",
-    eyebrow: "100% Customer Satisfaction",
-    title: "Live Loud, Live Clear",
+    eyebrow: "Phonak",
+    title: "Better Hearing Starts With the Right Care.",
     description:
       "Discreet, rechargeable, Bluetooth-enabled hearing aids designed for your lifestyle. Try before you buy.",
   },
@@ -139,10 +139,10 @@ export default function SliderSection() {
                       </svg>
                     </Link>
                     <Link
-                      href="/hearing-aid"
+                      href="tel:+91%2098112%2024051"
                       className="inline-flex items-center rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-brand-dark"
                     >
-                      Explore Hearing Aids
+                      WhatsApp Us
                     </Link>
                   </div>
                 </div>

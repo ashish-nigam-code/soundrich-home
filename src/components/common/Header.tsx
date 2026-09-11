@@ -8,11 +8,12 @@ import { useEffect, useState } from "react";
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
+  /*{ label: "Products", href: "/products" },*/
   { label: "Hearing Aids", href: "/hearing-aid" },
-  { label: "Products", href: "/products" },
-  { label: "Services", href: "/services" },
-  { label: "Blogs", href: "/blogs" },
-  { label: "Locations", href: "/location" },
+  { label: "Hearing Test", href: "/hearing-test" },
+  /*{ label: "Services", href: "/services" },*/
+  /*{ label: "Blogs", href: "/blogs" },*/
+  { label: "Our Centres", href: "/location" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
@@ -86,7 +87,7 @@ export default function Header() {
             href="/contact-us"
             className="ml-3 hidden items-center gap-2 rounded-full bg-gradient-to-r from-brand to-brand-dark px-5 py-2.5 text-base font-semibold text-white shadow-md shadow-brand/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 sm:inline-flex"
           >
-            Book Free Test
+            Book Free Hearing Test
           </Link>
 
           <button

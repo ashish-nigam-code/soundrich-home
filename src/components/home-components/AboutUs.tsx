@@ -108,8 +108,8 @@ const FEATURES = [
   {
     icon: IconEar,
     chipClass: "bg-brand/10 text-brand",
-    title: "Certified Audiologists",
-    text: "Qualified hearing specialists you can trust",
+    title: "Experienced Audiologists",
+    text: "Experienced hearing Audiologists you can trust",
   },
   {
     icon: IconAssessment,
@@ -120,8 +120,8 @@ const FEATURES = [
   {
     icon: IconChip,
     chipClass: "bg-accent/15 text-accent",
-    title: "Advanced Digital Technology",
-    text: "Smart, discreet & Bluetooth-enabled aids",
+    title: "10+ Locations",
+    text: "Specialized hearing care across 10+ locations",
   },
   {
     icon: IconHome,
@@ -198,7 +198,7 @@ export default function AboutUs() {
                 </div>
                 <div>
                   <p className="text-2xl leading-none font-extrabold text-heading">
-                    10,000+
+                    50,000+
                   </p>
                   <p className="mt-1 text-xs font-semibold tracking-wide text-body uppercase">
                     Happy Clients
@@ -214,7 +214,7 @@ export default function AboutUs() {
                   <CheckBadge />
                 </span>
                 <p className="text-xs font-bold text-heading">
-                  Certified Audiologists
+                  Experienced Audiologists
                 </p>
               </div>
             </div>
@@ -229,22 +229,18 @@ export default function AboutUs() {
             </span>
 
             <h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
-              A Hearing Care Centre Built on{" "}
+              We Are{" "}
               <span className="text-brand-dark underline decoration-accent/70 decoration-4 underline-offset-8">
-                Trust &amp; Expertise
+                Soundrich Hearing
               </span>
             </h2>
 
             <p className="mt-6 leading-relaxed text-body">
-              Soundrich Hearing is a trusted hearing aid centre serving families
-              across Delhi NCR. From your first{" "}
+              Our raison d’etre is very simple – we want to enable everyone to hear. And we firmly believe that no one should miss out on the joy of listening to music, the sounds of birds chirping, or the words of a loved one.{" "}
               <strong className="font-semibold text-heading">
                 free hearing assessment
               </strong>{" "}
-              to expert fitting and lifelong aftercare, our certified
-              audiologists combine advanced digital technology with genuine,
-              personalised care — so every conversation, every laugh and every
-              precious moment sounds wonderful again.
+              And that is what we at Sound Rich Hearing strive towards, day in and day out. We are dealers of hearing aid products of companies such as Phonak, Oticon, Signia, widex, and so on. We deliver the most cutting-edge hearing aid solutions by dealing with the Indian offices of these companies to acquire their products.
             </p>
 
             {/* Feature checklist with matching icons */}

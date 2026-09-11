@@ -103,38 +103,38 @@ const FEATURES = [
   {
     icon: IconAward,
     chipClass: "bg-brand/10 text-brand",
-    title: "Certified & Experienced Audiologists",
-    text: "Qualified hearing specialists who test, fit and guide you with genuine expertise — never a hard sell.",
+    title: "Expert Audiology Care",
+    text: "Professional guidance from experienced hearing-care specialists.",
   },
   {
     icon: IconEarCheck,
     chipClass: "bg-accent/15 text-accent",
     title: "Free Hearing Test & Trial",
-    text: "A complete hearing evaluation plus a no-obligation trial of premium digital aids — completely free.",
+    text: "Start your hearing-care journey with an assessment and solution trial.",
   },
   {
     icon: IconZap,
     chipClass: "bg-brand-dark/10 text-brand-dark",
-    title: "Advanced Digital Hearing Aids",
-    text: "Discreet, rechargeable and Bluetooth-enabled devices from Phonak, Signia, Oticon, Resound and Widex.",
+    title: "Personalized Hearing Solutions",
+    text: "Recommendations based on your hearing needs, lifestyle and comfort.",
   },
   {
     icon: IconCard,
     chipClass: "bg-accent/15 text-accent",
-    title: "Easy EMI & Transparent Pricing",
-    text: "Premium hearing aids from ₹20,990 per ear with flexible EMI options and honest, upfront pricing.",
+    title: "Home Visit Available",
+    text: "Convenient hearing-care support at home, where available.",
   },
   {
     icon: IconShieldCheck,
     chipClass: "bg-brand-dark/10 text-brand-dark",
-    title: "Home Visits, Aftercare & Warranty",
-    text: "Doorstep tests and fitting for those who can't travel — plus free servicing and warranty support that continues long after your purchase.",
+    title: "Flexible Payment Options",
+    text: "Make the right hearing solution easier to access.",
   },
   {
     icon: IconBadgeCheck,
     chipClass: "bg-brand/10 text-brand",
-    title: "Genuine, Authorised Devices",
-    text: "100% genuine, BIS-certified hearing aids sourced directly from authorised dealers — with complete brand warranty.",
+    title: "After-Sales Support",
+    text: "Ongoing guidance, service and support after your purchase.",
   },
 ];
 
@@ -149,12 +149,12 @@ export default function WhyChoose() {
         <div className="max-w-3xl text-left">
           <span className="inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Why Choose Us
+            Why Us
           </span>
           <h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
-            Why Families Across Delhi NCR{" "}
+            Why Choose {" "}
             <span className="text-brand-dark underline decoration-accent/70 decoration-4 underline-offset-8">
-              Trust Soundrich Hearing
+              Soundrich Hearing ?
             </span>
           </h2>
           <p className="mt-5 leading-relaxed text-body">
