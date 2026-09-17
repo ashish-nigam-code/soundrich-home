@@ -23,46 +23,14 @@ const ArrowUpRightIcon = () => (
 const SERVICES = [
   {
     id: "01",
-    image: "/assets/images/Pure%20Tone%20Audiometry%20(PTA).webp",
-    alt: "Pure tone audiometry hearing test being performed at Soundrich Hearing",
-    title: "Pure Tone Audiometry (PTA)",
-    description:
-      "Measures your hearing sensitivity across different pitches to build your personal hearing profile — the essential first step of every hearing check-up.",
-  },
-  {
-    id: "02",
-    image: "/assets/images/Tympanometry%20(Impedance%20Audiometry).webp",
-    alt: "Tympanometry middle-ear test being performed at Soundrich Hearing",
-    title: "Tympanometry (Impedance Audiometry)",
-    description:
-      "Checks the health of your middle ear — eardrum movement and pressure — helping detect infections or blockages behind the eardrum.",
-  },
-  {
-    id: "03",
-    image: "/assets/images/Brain%20Evoked%20Response%20Audiometry%20(BERA).webp",
-    alt: "BERA hearing test being performed at Soundrich Hearing",
-    title: "Brain Evoked Response Audiometry (BERA)",
-    description:
-      "A non-invasive test that evaluates the hearing nerve pathway to the brain — ideal for infants and anyone unable to respond during testing.",
-  },
-  {
-    id: "04",
-    image: "/assets/images/Auditory%20Steady%20State%20Response%20(ASSR).webp",
-    alt: "ASSR diagnostic hearing test at Soundrich Hearing",
-    title: "Auditory Steady State Response (ASSR)",
-    description:
-      "Advanced testing that maps frequency-specific hearing levels even while you sleep — giving precise results for accurate hearing aid fitting.",
-  },
-  {
-    id: "05",
     image: "/assets/images/Oto%20Acoustic%20Emissions%20(OAE).webp",
     alt: "Oto acoustic emissions inner-ear test at Soundrich Hearing",
-    title: "Oto Acoustic Emissions (OAE)",
+    title: "Oto Acoustic Emissions",
     description:
       "A quick, gentle test of inner-ear (cochlear) function — widely used for hearing screening in newborns, children and adults.",
   },
   {
-    id: "06",
+    id: "02",
     image: "/assets/images/Hearing%20Aid%20Fittings.webp",
     alt: "Hearing aid fitting and programming at Soundrich Hearing",
     title: "Hearing Aid Fittings",
@@ -70,7 +38,7 @@ const SERVICES = [
       "Personalised fitting and programming of your hearing aids with real-ear verification — tuned until speech sounds clear and natural.",
   },
   {
-    id: "07",
+    id: "03",
     image: "/assets/images/Hearing%20Aid%20Trials.webp",
     alt: "Hearing aid trial at Soundrich Hearing",
     title: "Hearing Aid Trials",
@@ -78,7 +46,7 @@ const SERVICES = [
       "Experience premium digital hearing aids on trial — at our centre or in the comfort of your own home — before you make a decision.",
   },
   {
-    id: "08",
+    id: "04",
     image: "/assets/images/Home%20Visit%20Facility.webp",
     alt: "Home visit hearing care facility at Soundrich Hearing",
     title: "Home Visit Facility",
@@ -139,22 +107,8 @@ export default function ServiceSection() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-brand-soft py-20 sm:py-24 lg:py-28"
+      className="relative bg-brand-soft py-20 sm:py-24 lg:py-28"
     >
-      {/* Decorative background */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-white/60 blur-3xl" />
-        <div className="absolute bottom-0 -left-24 h-[26rem] w-[26rem] rounded-full bg-white/50 blur-3xl" />
-        <div
-          className="absolute top-1/3 left-1/2 h-44 w-72 opacity-40"
-          style={{
-            backgroundImage:
-              "radial-gradient(rgba(0,143,196,0.25) 1.5px, transparent 1.5px)",
-            backgroundSize: "18px 18px",
-          }}
-        />
-      </div>
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="mx-auto max-w-3xl text-center">

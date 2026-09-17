@@ -77,18 +77,17 @@ export default function Testimonials() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-brand-soft px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            Patient Stories
+            Customer Stories
           </span>
           <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
-            What Our{" "}
+            Real People.{" "}
             <span className="bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
-              Happy Patients
-            </span>{" "}
-            Say
+              Real Hearing Journeys.
+            </span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-body sm:text-lg">
-            Real experiences from people who choose Soundrich Hearing for better hearing and a
-            better life.
+            Every hearing journey is different. See how better hearing can make everyday
+            conversations more comfortable and connected.
           </p>
         </div>
 

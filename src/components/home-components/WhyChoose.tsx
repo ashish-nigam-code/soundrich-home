@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* Feature icons — each matches its feature title */
 
 const IconAward = () => (
@@ -158,8 +160,9 @@ export default function WhyChoose() {
             </span>
           </h2>
           <p className="mt-5 leading-relaxed text-body">
-            Ten-plus years, thousands of happy patients and one simple promise —
-            hearing care that&apos;s honest, affordable and truly personal.
+            Expert audiology care, personalized hearing solutions and ongoing
+            support — everything your family needs for better hearing, in one
+            place.
           </p>
         </div>
 
@@ -183,6 +186,28 @@ export default function WhyChoose() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Section CTA */}
+        <div className="mt-12 text-center">
+          <Link
+            href="/contact-us"
+            className="group inline-flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-sm font-bold text-white shadow-lg shadow-brand/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-xl hover:shadow-brand/40"
+          >
+            Talk to a Hearing Care Expert
+            <svg
+              className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M13.5 4.5 21 12l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>

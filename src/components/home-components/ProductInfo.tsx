@@ -48,15 +48,19 @@ export default function ProductInfo() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-white px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            Authorised Partner
+            Hearing Solutions
           </span>
           <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
-            A Range of{" "}
+            Find the Right{" "}
             <span className="bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
-              Latest Technology
+              Hearing Solution
             </span>{" "}
-            Hearing Devices
+            for You
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-body sm:text-lg">
+            Explore hearing solutions designed for different hearing needs, lifestyles and
+            preferences.
+          </p>
         </div>
 
         {/* ---------- Product grid ---------- */}

@@ -173,9 +173,6 @@ export default function Footer() {
         className="pointer-events-none absolute -right-32 -bottom-32 h-80 w-80 rounded-full bg-accent/10 blur-3xl"
       />
 
-      {/* Brand hairline */}
-      <div className="relative h-1.5 bg-gradient-to-r from-brand via-accent to-brand" />
-
       {/* CTA band */}
       <div className="relative mx-auto max-w-7xl px-4 pt-14 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-brand to-brand-dark px-6 py-10 shadow-2xl shadow-brand/25 sm:px-12">
@@ -189,15 +186,12 @@ export default function Footer() {
           />
           <div className="relative flex flex-col items-center justify-between gap-7 text-center lg:flex-row lg:text-left">
             <div>
-              <p className="text-xs font-bold tracking-[0.2em] text-white/70 uppercase">
-                Free Hearing Test · Home Trial · Easy EMI
-              </p>
+             
               <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
-                Ready to hear life clearly again?
+                Ready to Hear Better?
               </h2>
               <p className="mt-2 max-w-xl text-sm text-white/80 sm:text-base">
-                Talk to an expert audiologist today and take the first step
-                toward better hearing.
+                Take the first step with a professional hearing assessment. Our team is here to help you understand your hearing and find the right solution.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">

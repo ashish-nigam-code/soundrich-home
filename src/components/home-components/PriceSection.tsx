@@ -193,15 +193,15 @@ const PERK_ICONS: Record<string, () => ReactNode> = {
   home: IconHome,
 };
 
-/* "It's easy to get started" — three color-coded steps */
+/* "Your Journey to Better Hearing" — three color-coded steps from the Homepage docx */
 const GET_STARTED = [
   {
-    no: "1",
+    no: "01",
     Icon: IconChat,
-    title: "Connect With Soundrich Hearing",
+    title: "Hearing Test",
     body: (
       <p className="mt-2 text-sm leading-relaxed text-body">
-        Chat now or call us at{" "}
+        Understand your hearing clearly with a professional assessment. Call us at{" "}
         <a
           href={PHONE.href}
           className="text-base font-extrabold text-brand-dark transition-colors hover:text-brand"
@@ -210,7 +210,7 @@ const GET_STARTED = [
         </a>
       </p>
     ),
-    cta: { label: "Call Now", href: PHONE.href },
+    cta: { label: "Book Your Hearing Test", href: "/contact-us" },
     theme: {
       icon: "text-brand-dark",
       box: "border-brand/50",
@@ -219,15 +219,15 @@ const GET_STARTED = [
     },
   },
   {
-    no: "2",
+    no: "02",
     Icon: IconCalendar,
-    title: "Book a Free Hearing Test",
+    title: "Find the Right Solution",
     body: (
       <p className="mt-2 text-sm leading-relaxed text-body">
-        Our care executive will schedule your appointment at the clinic or your home.
+        Explore a solution based on your hearing needs and lifestyle.
       </p>
     ),
-    cta: { label: "Book Free Test", href: "/contact-us" },
+    cta: { label: "Explore Hearing Aids", href: "/hearing-aid" },
     theme: {
       icon: "text-[#3c8a2a]",
       box: "border-accent/60",
@@ -236,15 +236,15 @@ const GET_STARTED = [
     },
   },
   {
-    no: "3",
+    no: "03",
     Icon: IconStore,
-    title: "Meet an Expert Audiologist",
+    title: "Fitting & Ongoing Support",
     body: (
       <p className="mt-2 text-sm leading-relaxed text-body">
-        Visit our nearest clinic and get a personalised hearing solution fitted for you.
+        Get professional fitting, guidance and after-sales support.
       </p>
     ),
-    cta: { label: "Find Local Clinic", href: "/location" },
+    cta: { label: "Talk to an Expert", href: "/contact-us" },
     theme: {
       icon: "text-[#0b5394]",
       box: "border-[#0d75c9]/60",
@@ -345,10 +345,10 @@ export default function PriceSection() {
           })}
         </div>
 
-        {/* ---------- Easy to get started (3 steps) ---------- */}
+        {/* ---------- Your Journey to Better Hearing (3 steps) ---------- */}
         <div className="mt-20">
           <h2 className="text-center text-2xl font-extrabold tracking-tight text-brand-dark sm:text-3xl lg:text-[2rem]">
-            It&apos;s easy to get started
+            Your Journey to Better Hearing
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-sm text-body sm:text-base">
             Three simple steps between you and better hearing.

@@ -151,21 +151,21 @@ export default function BannerSection() {
 
         {/* 3. Main heading */}
         <h2 className="mt-9 max-w-5xl text-[1.7rem] leading-[1.25] font-extrabold text-white sm:text-4xl sm:leading-[1.2] lg:text-[3.1rem] lg:leading-[1.18]">
-          Hearing Solutions That Resolve All Your
-          <br className="hidden sm:block" /> Hearing Problems.
+          Trusted Hearing Technology
         </h2>
 
         {/* 4. Subheading */}
-        <p className="mt-5 text-base font-medium text-white/85 sm:text-lg lg:text-xl">
-          …all in one place.
+        <p className="mt-5 max-w-3xl text-base font-medium text-white/85 sm:text-lg lg:text-xl">
+          Explore hearing solutions from leading hearing-technology brands, with
+          professional guidance to help you choose what fits your needs.
         </p>
 
         {/* 5. CTA button */}
         <Link
-          href="/contact-us"
+          href="/hearing-aid"
           className="group mt-10 inline-flex items-center justify-center gap-2.5 rounded-full bg-[#0d75c9] px-8 py-4 text-sm font-bold text-white shadow-xl shadow-[#0d75c9]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0a66b3] hover:shadow-2xl hover:shadow-[#0d75c9]/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:text-base"
         >
-          Get Ideal Hearing Aids From Renowned Brands
+          Explore Hearing Aids
           <svg
             className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
             viewBox="0 0 24 24"

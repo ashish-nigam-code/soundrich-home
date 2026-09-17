@@ -16,6 +16,7 @@
 
   /* Infobar marquee animation (seamless right-to-left scroll) */
   --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-slow: marquee 80s linear infinite;
 
   @keyframes marquee {
     from {
@@ -59,15 +60,5 @@
       transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) scale(1.05);
       opacity: 0;
     }
-  }
-}
-
-/* Hero slider autoplay progress bar */
-@keyframes slider-progress {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
   }
 }

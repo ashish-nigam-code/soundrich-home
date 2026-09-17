@@ -15,16 +15,16 @@ export default function Home() {
     <>
 
       <SliderSection/>
+      <StatsSection/>
       <AboutUs/>
       <ServiceSection/>
       <WhyChoose/>
       <BannerSection/>
       <PriceSection/>
-      <StatsSection/>
       <ProductInfo/>
       <Testimonials/>
       <Blogs/>
-       <Faqs/>
+      <Faqs/>
       
 
     </>
