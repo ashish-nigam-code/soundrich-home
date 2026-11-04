@@ -84,7 +84,7 @@ export default function BrandPage({ brand }: { brand: HearingAidBrand }) {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/contact-us"
-                className="group inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-brand/40 transition-all hover:-translate-y-0.5 hover:bg-brand-dark"
+                className="group inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-brand/40 transition-all hover:-translate-y-0.5 hover:bg-accent-dark"
               >
                 Book Free Hearing Test
                 <ArrowIcon />

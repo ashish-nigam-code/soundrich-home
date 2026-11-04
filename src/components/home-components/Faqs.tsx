@@ -33,7 +33,7 @@ const SUPPORT_POINTS = [
 
 function CheckIcon() {
   return (
-    <svg className="h-4 w-4 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true">
+    <svg className="h-4 w-4 shrink-0 text-[#155dfc]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
     </svg>
   );
@@ -65,11 +65,7 @@ export default function Faqs() {
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           {/* ---------- Left: intro + contact ---------- */}
           <div className="lg:col-span-5">
-            <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-brand-soft px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-              Got Questions?
-            </span>
-            <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.6rem] lg:leading-[1.15]">
+<h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.6rem] lg:leading-[1.15]">
               Frequently Asked{" "}
               <span className="text-accent">Questions</span>
             </h2>
@@ -79,10 +75,10 @@ export default function Faqs() {
             </p>
 
             {/* support points */}
-            <ul className="mt-7 space-y-3">
+            <ul className="mt-10 space-y-3">
               {SUPPORT_POINTS.map((point) => (
                 <li key={point} className="flex items-center gap-3 text-sm font-semibold text-heading">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#155dfc]/10">
                     <CheckIcon />
                   </span>
                   {point}
@@ -101,8 +97,8 @@ export default function Faqs() {
                     key={faq.q}
                     className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
                       open
-                        ? "border-brand/30 bg-brand-soft/40 shadow-md shadow-brand/5"
-                        : "border-slate-200 bg-neutral-primary/60 hover:border-brand/25 hover:bg-white"
+                        ? "border-[#155dfc]/30 shadow-md shadow-[#155dfc]/5"
+                        : "border-slate-200 bg-neutral-primary/60 hover:border-[#155dfc]/25 hover:bg-white"
                     }`}
                   >
                     <button
@@ -121,9 +117,7 @@ export default function Faqs() {
                         </span>
                       </span>
                       <span
-                        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${
-                          open
-                            ? "rotate-180 border-transparent bg-brand text-white"
+                        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${open ? "rotate-180 border-transparent bg-[#155dfc] text-white"
                             : "border-slate-300 bg-white text-body"
                         }`}
                       >
@@ -138,8 +132,8 @@ export default function Faqs() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="px-5 pb-5 sm:px-6 sm:pb-6">
-                          <div className="border-l-2 border-brand/30 pl-4 sm:pl-5">
+                        <div className="pb-5 sm:pb-6">
+                          <div className="pl-4 sm:pl-5">
                             <p className="text-sm leading-relaxed text-body sm:text-[0.95rem]">
                               {faq.a}
                             </p>

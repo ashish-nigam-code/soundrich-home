@@ -163,7 +163,7 @@ export default function SliderSection() {
               <div className="mt-7 flex flex-wrap items-center gap-3">
                 <Link
                   href="/contact-us"
-                  className="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-brand/40 transition-all hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-brand-dark/50"
+                  className="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-brand/40 transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:shadow-black/25"
                 >
                   Book Free Hearing Test
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">

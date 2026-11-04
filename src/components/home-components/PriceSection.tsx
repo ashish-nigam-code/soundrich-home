@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 /* ------------------------------------------------------------------ */
-/*  Content — sourced from soundrichhearing.com "Hearing Aid Price in  */
+/*  Content — sourced from soundrichhearing.com "Hearing Aid Price in */
 /*  India 2026" section                                                */
 /* ------------------------------------------------------------------ */
 
@@ -14,15 +14,16 @@ const PRICE_TIERS = [
     name: "Basic Digital Hearing Aids",
     price: "₹20,990 – ₹60,000",
     note: "Essential digital technology for clear everyday listening",
-    badge: "Starts under ₹21,000",
+    badge: "Starts Under ₹21,000",
     popular: false,
     theme: {
-      bar: "from-[#35c3e8] via-brand to-brand-dark",
-      chip: "bg-brand-soft text-brand-dark",
-      chipDot: "bg-brand",
-      price: "text-brand-dark",
-      check: "text-brand",
-      border: "hover:border-brand/40",
+      bar: "bg-[#57b957]",
+      badgeBg: "bg-[#eaf5eb]",
+      badgeText: "text-[#2d7a33]",
+      badgeDot: "bg-[#57b957]",
+      title: "text-gray-900",
+      price: "text-[#57b957]",
+      check: "text-[#57b957]",
     },
   },
   {
@@ -32,12 +33,13 @@ const PRICE_TIERS = [
     badge: "Most Popular",
     popular: true,
     theme: {
-      bar: "from-[#8fd15f] via-accent to-[#3c8a2a]",
-      chip: "bg-gradient-to-r from-accent to-[#3c8a2a] text-white",
-      chipDot: "bg-white",
-      price: "text-[#2f7d1e]",
-      check: "text-accent",
-      border: "border-accent/35 ring-2 ring-accent/25",
+      bar: "bg-[#57b957]",
+      badgeBg: "bg-[#388e3c]",
+      badgeText: "text-white",
+      badgeDot: "bg-white",
+      title: "text-gray-900",
+      price: "text-[#57b957]",
+      check: "text-[#57b957]",
     },
   },
   {
@@ -47,12 +49,13 @@ const PRICE_TIERS = [
     badge: "Latest Technology",
     popular: false,
     theme: {
-      bar: "from-[#0d75c9] to-[#003a70]",
-      chip: "bg-[#e3f0fa] text-[#0b5394]",
-      chipDot: "bg-[#0d75c9]",
-      price: "text-[#0b5394]",
-      check: "text-[#0d75c9]",
-      border: "hover:border-[#0d75c9]/40",
+      bar: "bg-[#155dfc]",
+      badgeBg: "bg-[#e3f2fd]",
+      badgeText: "text-[#0b5394]",
+      badgeDot: "bg-[#155dfc]",
+      title: "text-gray-900",
+      price: "text-[#155dfc]",
+      check: "text-[#155dfc]",
     },
   },
 ];
@@ -229,10 +232,10 @@ const GET_STARTED = [
     ),
     cta: { label: "Explore Hearing Aids", href: "/hearing-aid" },
     theme: {
-      icon: "text-[#3c8a2a]",
-      box: "border-accent/60",
-      num: "bg-accent",
-      link: "text-[#2f7d1e] hover:text-accent",
+      icon: "text-[#57b957]",
+      box: "border-[#57b957]/50",
+      num: "bg-[#57b957]",
+      link: "text-[#3c8a2a] hover:text-[#57b957]",
     },
   },
   {
@@ -246,10 +249,10 @@ const GET_STARTED = [
     ),
     cta: { label: "Talk to an Expert", href: "/contact-us" },
     theme: {
-      icon: "text-[#0b5394]",
-      box: "border-[#0d75c9]/60",
-      num: "bg-[#0d75c9]",
-      link: "text-[#0b5394] hover:text-[#0d75c9]",
+      icon: "text-[#155dfc]",
+      box: "border-[#155dfc]/60",
+      num: "bg-[#155dfc]",
+      link: "text-[#0b5394] hover:text-[#155dfc]",
     },
   },
 ];
@@ -267,59 +270,56 @@ export default function PriceSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ---------- Header ---------- */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-brand-soft px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
-            Transparent Pricing · No Hidden Costs
-          </span>
           <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
-            Hearing Aid Price in India <span className="text-brand-dark">2026</span>
+            Hearing Aid Price in India{" "}
+            <span className="text-[#57b957]">2026</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-body sm:text-lg">
             Hearing aid prices in India 2026 vary based on brand, technology and the level of
             hearing loss. At Soundrich Hearing, digital hearing aids start from{" "}
-            <strong className="font-semibold text-brand-dark">₹20,990 per ear</strong> — with easy
+            <strong className="font-semibold text-gray-900">₹20,990 per ear</strong> — with easy
             EMI, a free hearing test and a free home trial.
           </p>
         </div>
 
         {/* ---------- Price tier cards ---------- */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
           {PRICE_TIERS.map((tier) => (
             <div
               key={tier.name}
-              className={`group relative flex flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
-                tier.popular
-                  ? `${tier.theme.border} shadow-lg`
-                  : `border-slate-200 ${tier.theme.border}`
+              className={`group relative flex flex-col overflow-hidden rounded-2xl border-0 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+                tier.popular ? "shadow-lg" : ""
               }`}
             >
-              {/* brand-colored top bar */}
+              {/* Colored top bar */}
               <span
-                className={`block h-1.5 w-full bg-linear-to-r ${tier.theme.bar}`}
+                className={`block h-1.5 w-full ${tier.theme.bar}`}
                 aria-hidden="true"
               />
               <div className="flex flex-1 flex-col p-6 sm:p-7">
+                {/* Badge */}
                 <span
-                  className={`inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-[0.65rem] font-bold tracking-[0.14em] uppercase ${tier.theme.chip}`}
+                  className={`inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-[0.65rem] font-bold tracking-[0.14em] uppercase ${tier.theme.badgeBg} ${tier.theme.badgeText}`}
                 >
                   <span
-                    className={`h-1.5 w-1.5 rounded-full ${tier.theme.chipDot}`}
+                    className={`h-1.5 w-1.5 rounded-full ${tier.theme.badgeDot}`}
                     aria-hidden="true"
                   />
                   {tier.badge}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-heading">{tier.name}</h3>
+
+                <h3 className={`mt-4 text-lg font-bold ${tier.theme.title}`}>{tier.name}</h3>
 
                 <p className={`mt-4 text-3xl leading-none font-extrabold tracking-tight lg:text-[2rem] ${tier.theme.price}`}>
                   {tier.price}
                 </p>
-                <p className="mt-2 text-xs font-semibold tracking-widest text-body/70 uppercase">
+                <p className="mt-2 text-xs font-semibold tracking-widest text-gray-500 uppercase">
                   per pair
                 </p>
 
-                <div className="mt-5 flex-1 border-t border-dashed border-slate-200 pt-5">
-                  <p className="flex items-start gap-2 text-sm leading-relaxed text-body">
-                    <span className={`mt-0.5 ${tier.theme.check}`}>
+                <div className="mt-5 flex-1 border-t border-dashed border-gray-300 pt-5">
+                  <p className="flex items-start gap-2 text-sm leading-relaxed text-gray-700">
+                    <span className={`mt-0.5 shrink-0 ${tier.theme.check}`}>
                       <CheckIcon />
                     </span>
                     {tier.note}
@@ -331,15 +331,15 @@ export default function PriceSection() {
         </div>
 
         {/* ---------- Perks / EMI strip ---------- */}
-        <div className="mt-10 flex flex-col items-center justify-center gap-x-8 gap-y-4 rounded-2xl border border-slate-200 bg-neutral-primary px-6 py-6 sm:flex-row sm:flex-wrap">
+        <div className="mt-10 flex flex-col items-center justify-center gap-x-8 gap-y-4 rounded-2xl border border-gray-200 bg-gray-50 px-6 py-6 sm:flex-row sm:flex-wrap">
           {PERKS.map((perk) => {
             const Icon = PERK_ICONS[perk.icon];
             return (
               <div key={perk.label} className="flex items-center gap-2.5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-brand-dark shadow-sm ring-1 ring-slate-200">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-gray-900 shadow-sm ring-1 ring-gray-200">
                   <Icon />
                 </span>
-                <span className="text-sm font-semibold text-heading">{perk.label}</span>
+                <span className="text-sm font-semibold text-gray-900">{perk.label}</span>
               </div>
             );
           })}
@@ -347,14 +347,14 @@ export default function PriceSection() {
 
         {/* ---------- Your Journey to Better Hearing (3 steps) ---------- */}
         <div className="mt-20">
-          <h2 className="text-center text-2xl font-extrabold tracking-tight text-brand-dark sm:text-3xl lg:text-[2rem]">
+          <h2 className="text-center text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl lg:text-[2rem]">
             Your Journey to Better Hearing
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-center text-sm text-body sm:text-base">
+          <p className="mx-auto mt-3 max-w-xl text-center text-sm text-gray-600 sm:text-base">
             Three simple steps between you and better hearing.
           </p>
 
-          <div className="mt-12 grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-y-0 md:divide-x md:divide-dotted md:divide-slate-300">
+          <div className="mt-12 grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-y-0 md:divide-x md:divide-dotted md:divide-gray-300">
             {GET_STARTED.map((step) => (
               <div
                 key={step.no}
@@ -373,7 +373,7 @@ export default function PriceSection() {
                   </span>
                 </span>
 
-                <h3 className="mt-5 text-lg font-bold text-heading">{step.title}</h3>
+                <h3 className="mt-5 text-lg font-bold text-gray-900">{step.title}</h3>
                 {step.body}
 
                 {step.cta.href.startsWith("tel:") ? (

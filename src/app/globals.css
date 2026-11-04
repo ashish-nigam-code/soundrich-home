@@ -1,10 +1,22 @@
 @import "tailwindcss";
 
+@layer utilities {
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
 @theme {
+  /* Widen the site container from Tailwind's default 1280px (7xl) to 1440px */
+  --container-7xl: 1440px;
+
   /* Soundrich Hearing brand palette — extracted from public/assets/logos/brand-logo.png */
-  --color-brand: #008fc4; /* primary sky blue */
-  --color-brand-dark: #0071a1; /* deeper blue for hover/emphasis */
-  --color-brand-soft: #e8f6fc; /* light blue tint for backgrounds */
+  --color-brand: #57b957; /* primary green */
+  --color-brand-dark: #57b957; /* brand emphasis green (headings, buttons) */
+  --color-brand-soft: #edf7e9; /* light green tint for backgrounds */
   --color-accent: #64b348; /* secondary green */
   --color-accent-dark: #3c8a2a; /* deeper green for hover/emphasis */
 
@@ -13,6 +25,9 @@
   --color-body: #475569;
   --color-neutral-primary: #f8fafc;
   --color-neutral-secondary-soft: #f1f5f9;
+
+  /* Testimonials gradient top colour (Elementor global colour token) */
+  --e-global-color-5a70c28: #0c73e5;
 
   /* Infobar marquee animation (seamless right-to-left scroll) */
   --animate-marquee: marquee 30s linear infinite;

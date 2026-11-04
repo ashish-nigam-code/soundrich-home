@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 /* Feature icons — each matches its feature title */
 
@@ -144,30 +143,25 @@ export default function WhyChoose() {
   return (
     <section
       id="why-choose-us"
-      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-neutral-secondary-soft py-20 sm:py-24 lg:py-28"
     >
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header — left aligned */}
         <div className="max-w-3xl text-left">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Why Us
-          </span>
-          <h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
+<h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
             Why Choose {" "}
-            <span className="text-brand-dark underline decoration-accent/70 decoration-4 underline-offset-8">
+            <span className="text-brand-dark">
               Soundrich Hearing ?
             </span>
           </h2>
           <p className="mt-5 leading-relaxed text-body">
-            Expert audiology care, personalized hearing solutions and ongoing
-            support — everything your family needs for better hearing, in one
-            place.
+            We bring to you a wide range of hearing aid products designed to help you to hear normally.
+From conducting tests for hearing to helping you discover the right solutions for your hearing impairment, you can depend on us.
           </p>
         </div>
 
         {/* Feature cards */}
-        <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-[30px] grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((feature) => (
             <div
               key={feature.title}
@@ -186,28 +180,6 @@ export default function WhyChoose() {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Section CTA */}
-        <div className="mt-12 text-center">
-          <Link
-            href="/contact-us"
-            className="group inline-flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-sm font-bold text-white shadow-lg shadow-brand/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-xl hover:shadow-brand/40"
-          >
-            Talk to a Hearing Care Expert
-            <svg
-              className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M13.5 4.5 21 12l-7.5 7.5M21 12H3" />
-            </svg>
-          </Link>
         </div>
       </div>
     </section>

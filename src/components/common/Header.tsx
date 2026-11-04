@@ -10,11 +10,11 @@ import { brandList } from "@/data/hearingAidBrands";
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
-  /*{ label: "Products", href: "/products" },*/
+  { label: "Products", href: "/products" },
   { label: "Hearing Aids", href: "/hearing-aid" },
-  { label: "Hearing Test", href: "/hearing-test" },
-  /*{ label: "Services", href: "/services" },*/
-  /*{ label: "Blogs", href: "/blogs" },*/
+  /*{ label: "Hearing Test", href: "/hearing-test" },*/
+  { label: "Services", href: "/services" },
+  { label: "Blogs", href: "/blogs" },
   { label: "Our Centres", href: "/location" },
   { label: "Contact Us", href: "/contact-us" },
 ];
@@ -53,7 +53,7 @@ export default function Header() {
             width={151}
             height={61}
             priority
-            className="h-10 w-auto sm:h-12"
+            className="h-12 w-auto sm:h-16"
           />
         </Link>
 

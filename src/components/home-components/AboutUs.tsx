@@ -109,28 +109,21 @@ export default function AboutUs() {
 
           {/* ---- Content ---- */}
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              About Soundrich Hearing
-            </span>
-
             <h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
-              We Are{" "}
-              <span className="text-brand-dark underline decoration-accent/70 decoration-4 underline-offset-8">
+              More About{" "}
+              <span className="text-brand-dark">
                 Soundrich Hearing
               </span>
             </h2>
 
             <p className="mt-6 leading-relaxed text-body">
-              Our raison d’etre is very simple – we want to enable everyone to hear. And we firmly believe that no one should miss out on the joy of listening to music, the sounds of birds chirping, or the words of a loved one.{" "}
-              <strong className="font-semibold text-heading">
-                free hearing assessment
-              </strong>{" "}
+              We are driven by the values of customer centricity and integrity. We will always have your best interests in our heart while dealing with you.
+              Our raison d’etre is very simple – we want to enable everyone to hear. And we firmly believe that no one should miss out on the joy of listening to music, the sounds of birds chirping, or the words of a loved one.
               And that is what we at Sound Rich Hearing strive towards, day in and day out. We are dealers of hearing aid products of companies such as Phonak, Oticon, Signia, widex, and so on. We deliver the most cutting-edge hearing aid solutions by dealing with the Indian offices of these companies to acquire their products.
             </p>
 
             {/* Feature checklist with matching icons */}
-            <ul className="mt-8 grid gap-x-6 gap-y-4 sm:grid-cols-2">
+            <ul className="mt-10 grid gap-x-6 gap-y-4 sm:grid-cols-2">
               {FEATURES.map((feature) => (
                 <li key={feature.title} className="flex items-start gap-3.5">
                   <span

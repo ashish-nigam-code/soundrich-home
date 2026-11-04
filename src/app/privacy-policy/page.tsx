@@ -70,7 +70,7 @@ export default function PrivacyPolicyPage() {
             Have questions about your privacy?{" "}
             <Link
               href="/contact-us"
-              className="font-semibold text-brand hover:underline"
+              className="font-semibold text-brand"
             >
               Contact us
             </Link>{" "}

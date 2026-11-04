@@ -24,7 +24,7 @@ export default function Hero({
             {description}
           </p>
 
-          <button className="mt-8 rounded-lg px-6 py-3">
+          <button className="mt-8 rounded-full bg-brand px-8 py-3 text-base font-semibold text-white transition-colors hover:bg-accent-dark">
             {buttonText}
           </button>
         </div>

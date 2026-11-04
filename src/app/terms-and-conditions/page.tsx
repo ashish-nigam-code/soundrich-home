@@ -74,7 +74,7 @@ export default function TermsPage() {
             Questions about our terms?{" "}
             <Link
               href="/contact-us"
-              className="font-semibold text-brand hover:underline"
+              className="font-semibold text-brand"
             >
               Contact us
             </Link>{" "}

@@ -112,13 +112,9 @@ export default function ServiceSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase shadow-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Our Services
-          </span>
-          <h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
+<h2 className="mt-5 text-3xl leading-tight font-extrabold text-heading sm:text-4xl lg:text-[2.65rem]">
             Complete Hearing Care,{" "}
-            <span className="text-brand-dark underline decoration-accent/70 decoration-4 underline-offset-8">
+            <span className="text-brand-dark">
               Under One Roof
             </span>
           </h2>
@@ -130,7 +126,7 @@ export default function ServiceSection() {
         </div>
 
         {/* Service cards — 4 per row */}
-        <div className="mt-14 grid gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 xl:gap-7">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 xl:gap-7">
           {SERVICES.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

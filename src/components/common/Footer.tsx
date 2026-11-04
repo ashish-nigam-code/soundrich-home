@@ -319,14 +319,14 @@ export default function Footer() {
           <div className="flex items-center gap-5 text-base">
             <Link
               href="/privacy-policy"
-              className="text-white/90 transition-colors hover:text-white hover:underline hover:underline-offset-4"
+              className="text-white/90 transition-colors hover:text-white "
             >
               Privacy Policy
             </Link>
             <span className="h-3 w-px bg-white/40" aria-hidden="true" />
             <Link
               href="/terms-and-conditions"
-              className="text-white/90 transition-colors hover:text-white hover:underline hover:underline-offset-4"
+              className="text-white/90 transition-colors hover:text-white "
             >
               Terms & Conditions
             </Link>

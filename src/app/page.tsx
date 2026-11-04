@@ -9,6 +9,8 @@ import Blogs from "../components/home-components/Blogs";
 import PriceSection from "../components/home-components/PriceSection";
 import StatsSection from "../components/home-components/StatsSection";
 import ProductInfo from "../components/home-components/ProductInfo";
+import HearingCentre from "../components/home-components/HearingCentre";
+import HearingMachineTypes from "../components/home-components/HearingMachineTypes";
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
       <StatsSection/>
       <AboutUs/>
       <ServiceSection/>
+      <HearingCentre/>
       <WhyChoose/>
+      <HearingMachineTypes/>
       <BannerSection/>
       <PriceSection/>
       <ProductInfo/>
@@ -26,7 +30,6 @@ export default function Home() {
       <Blogs/>
       <Faqs/>
       
-
     </>
   );
 }

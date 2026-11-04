@@ -15,7 +15,7 @@ export default function Cta({
           {title}
         </h2>
 
-        <button className="mt-8 rounded-lg px-8 py-4">
+        <button className="mt-8 rounded-full bg-brand px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-accent-dark">
           {buttonText}
         </button>
 

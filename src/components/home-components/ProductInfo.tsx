@@ -46,11 +46,7 @@ export default function ProductInfo() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ---------- Header ---------- */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-white px-4 py-1.5 text-xs font-bold tracking-[0.18em] text-brand-dark uppercase shadow-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            Hearing Solutions
-          </span>
-          <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
+<h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
             Find the Right{" "}
             <span className="bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
               Hearing Solution
@@ -64,7 +60,7 @@ export default function ProductInfo() {
         </div>
 
         {/* ---------- Product grid ---------- */}
-        <div className="mt-12 grid gap-6 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
           {PRODUCTS.map((product) => (
             <Link
               key={product.name}
