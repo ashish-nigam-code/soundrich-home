@@ -6,31 +6,31 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const SLIDES = [
   {
-    image: "/assets/images/herobanner1.jpeg",
+    image: "/assets/images/landingpageimages/herobanner1.jpeg",
     title: "Better Hearing Starts With the Right Care.",
     description:
       "Premium digital hearing aids fitted by expert audiologists. Start with a free hearing assessment at your nearest Soundrich clinic.",
   },
   {
-    image: "/assets/images/herobanner2.jpeg",
+    image: "/assets/images/landingpageimages/herobanner2.jpeg",
     title: "Better Hearing Starts With the Right Care.",
     description:
       "A comprehensive hearing test with our expert audiologists and a personalised care plan — absolutely free, no obligations.",
   },
   {
-    image: "/assets/images/herobanner1.jpeg",
+    image: "/assets/images/landingpageimages/herobanner1.jpeg",
     title: "Better Hearing Starts With the Right Care.",
     description:
       "Can't visit us? Our audiologists come to you — home visit hearing tests and hearing aid fitting across Delhi NCR.",
   },
   {
-    image: "/assets/images/herobanner2.jpeg",
+    image: "/assets/images/landingpageimages/herobanner2.jpeg",
     title: "Better Hearing Starts With the Right Care.",
     description:
       "We stock leading international brands — Phonak, Oticon, Signia, Resound and more — with trial, fitting and complete aftercare.",
   },
   {
-    image: "/assets/images/herobanner1.jpeg",
+    image: "/assets/images/landingpageimages/herobanner1.jpeg",
     title: "Better Hearing Starts With the Right Care.",
     description:
       "Discreet, rechargeable, Bluetooth-enabled hearing aids designed for your lifestyle. Try before you buy.",
