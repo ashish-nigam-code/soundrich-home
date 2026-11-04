@@ -226,7 +226,7 @@ export default function Footer() {
                 alt="Soundrich Hearing"
                 width={151}
                 height={61}
-                className="h-10 w-auto sm:h-12"
+                className="h-12 w-auto sm:h-16"
               />
             </Link>
             <p className="mt-5 max-w-sm text-base leading-relaxed text-slate-300">
